@@ -11,3 +11,6 @@ def initialize_session_state():
 
     if "info_extractor" not in st.session_state:
         st.session_state.info_extractor = InfoExtractor()
+        
+    if "categories" not in st.session_state:
+        st.session_state.categories = ["อาหาร", "เดินทาง", "อื่นๆ"]

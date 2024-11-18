@@ -38,7 +38,7 @@ def render_sidebar(categories_list):
         selected_amount = st.number_input(
             "Amount (฿: Baht)",
             min_value=0.0,
-            step=0.01,
+            step=1.0,
             format="%.2f"
         )
         
