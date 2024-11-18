@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 def render_sidebar(categories_list):
     st.sidebar.title("📝 ADD TRANSACTION HISTORY")
@@ -12,10 +13,10 @@ def render_sidebar(categories_list):
         accept_multiple_files=True
     )
     if uploaded_files:
-        if "uploaded_image" not in st.session_state:
-            st.session_state.uploaded_image = []
-
-        st.session_state.uploaded_image.append(uploaded_files)
+        images = [Image.open(file) for file in uploaded_files]
+        ocr = st.session_state.ocr_extractor
+        extracted_text = ocr.extract_text_from_images(images)
+        st.write(extracted_text)
         st.toast("Successfully added transaction!", icon="✅")
     
     # Add transaction by form

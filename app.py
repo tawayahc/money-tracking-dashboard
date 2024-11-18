@@ -1,8 +1,8 @@
 import streamlit as st
 from sidebar.sidebar import render_sidebar
+from utils.session_state import initialize_session_state
 
-if "transactions" not in st.session_state:
-    st.session_state.transactions = []
+initialize_session_state()
 
 def main():
     categories = ["อาหาร", "ขนม", "เดินทาง", "ของใช้", "บ้าน", "อื่น ๆ"]
