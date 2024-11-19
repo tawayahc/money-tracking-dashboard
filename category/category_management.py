@@ -37,6 +37,7 @@ def manage_categories():
         st.session_state.new_category = new_category.strip() 
         if st.session_state.new_category and st.session_state.new_category not in st.session_state.categories:
             st.session_state.categories.append(st.session_state.new_category)
+            st.session_state.categories = [cat for cat in st.session_state.categories if cat != "อื่นๆ"] + ["อื่นๆ"]
             save_categories_to_json() 
             st.toast(f"Category '{st.session_state.new_category}' added!", icon="✅")
         elif st.session_state.new_category in st.session_state.categories:

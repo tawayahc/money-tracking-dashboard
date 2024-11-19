@@ -1,17 +1,147 @@
 [
     {
-        "date": "2024-11-19",
-        "amount": 6.0,
-        "category": "อาหาร"
+        "date": "2023-12-15",
+        "amount": 300.0,
+        "category": "Groceries"
     },
     {
-        "date": "2024-11-19",
-        "amount": 0.0,
-        "category": "อาหาร"
+        "date": "2023-12-20",
+        "amount": 200.0,
+        "category": "Entertainment"
     },
     {
-        "date": "2024-11-19",
+        "date": "2024-01-10",
+        "amount": 150.0,
+        "category": "Travel"
+    },
+    {
+        "date": "2024-02-05",
         "amount": 100.0,
+        "category": "Healthcare"
+    },
+    {
+        "date": "2024-03-15",
+        "amount": 250.0,
+        "category": "Shopping"
+    },
+    {
+        "date": "2024-04-18",
+        "amount": 180.0,
+        "category": "Bills"
+    },
+    {
+        "date": "2024-05-22",
+        "amount": 500.0,
+        "category": "Groceries"
+    },
+    {
+        "date": "2024-06-08",
+        "amount": 90.0,
+        "category": "Savings"
+    },
+    {
+        "date": "2024-07-14",
+        "amount": 60.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-08-21",
+        "amount": 50.0,
+        "category": "Miscellaneous"
+    },
+    {
+        "date": "2024-09-10",
+        "amount": 120.0,
+        "category": "Healthcare"
+    },
+    {
+        "date": "2024-10-18",
+        "amount": 320.0,
+        "category": "Shopping"
+    },
+    {
+        "date": "2024-11-12",
+        "amount": 400.0,
+        "category": "Groceries"
+    },
+    {
+        "date": "2024-12-25",
+        "amount": 250.0,
+        "category": "Entertainment"
+    },
+    {
+        "date": "2025-01-05",
+        "amount": 150.0,
+        "category": "Travel"
+    },
+    {
+        "date": "2025-02-28",
+        "amount": 100.0,
+        "category": "Healthcare"
+    },
+    {
+        "date": "2025-03-17",
+        "amount": 50.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2025-04-22",
+        "amount": 180.0,
+        "category": "Bills"
+    },
+    {
+        "date": "2025-05-13",
+        "amount": 90.0,
+        "category": "Savings"
+    },
+    {
+        "date": "2025-06-11",
+        "amount": 75.0,
+        "category": "Miscellaneous"
+    },
+    {
+        "date": "2025-07-19",
+        "amount": 350.0,
+        "category": "Groceries"
+    },
+    {
+        "date": "2025-08-15",
+        "amount": 140.0,
+        "category": "Education"
+    },
+    {
+        "date": "2025-09-05",
+        "amount": 240.0,
+        "category": "Shopping"
+    },
+    {
+        "date": "2025-10-10",
+        "amount": 130.0,
+        "category": "Entertainment"
+    },
+    {
+        "date": "2025-11-07",
+        "amount": 170.0,
+        "category": "Travel"
+    },
+    {
+        "date": "2025-12-31",
+        "amount": 220.0,
+        "category": "Miscellaneous"
+    },
+    {
+        "date": "2024-11-12",
+        "amount": 50.0,
         "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-12",
+        "amount": 10.0,
+        "category": "Bills"
+    },
+    {
+        "date": "2024-11-12",
+        "amount": 10.0,
+        "category": "Bills"
     }
 ]

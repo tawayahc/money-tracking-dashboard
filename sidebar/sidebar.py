@@ -20,6 +20,8 @@ def render_sidebar(categories_list):
     st.sidebar.title("📝 ADD TRANSACTION HISTORY")
     st.sidebar.markdown("<hr/>", unsafe_allow_html=True)
     
+    st.session_state.categories = [cat for cat in st.session_state.categories if cat != "อื่นๆ"] + ["อื่นๆ"]
+    
     st.sidebar.header("Add by Image")
     uploaded_files = st.sidebar.file_uploader(
         'Choose your payment slip images',

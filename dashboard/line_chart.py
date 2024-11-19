@@ -24,32 +24,39 @@ def get_adjusted_palette(categories):
     adjusted_palette = [BASE_COLOR_PALETTE[i % len(BASE_COLOR_PALETTE)] for i in range(num_categories)]
     return adjusted_palette
 
-def plot_expenses_chart(transactions):
+def plot_line_chart(transactions):
     """
-    Plot a bar chart to show the number of expenses for each category grouped by day, month, or year using st.bar_chart.
+    Plot a line chart showing monthly expenses for selected categories using st.line_chart.
 
     Args:
         transactions (list): A list of transaction dictionaries with 'date', 'amount', and 'category' keys.
     """
     if not transactions:
-        st.info("No transaction data available for the chart.")
+        st.info("No transaction data available for the line chart.")
         return
 
     transactions_df = pd.DataFrame(transactions)
     transactions_df['date'] = pd.to_datetime(transactions_df['date'])
 
-    group_by = st.selectbox("", ["Day", "Month", "Year"])
+    transactions_df['year_month'] = transactions_df['date'].dt.to_period('M').astype(str)
 
-    if group_by == "Day":
-        transactions_df['grouped_date'] = transactions_df['date'].dt.strftime('%Y-%m-%d')
-    elif group_by == "Month":
-        transactions_df['grouped_date'] = transactions_df['date'].dt.strftime('%Y-%m')
-    elif group_by == "Year":
-        transactions_df['grouped_date'] = transactions_df['date'].dt.strftime('%Y')
-
-    grouped_expenses = (
-        transactions_df.groupby(['grouped_date', 'category'])['amount']
+    monthly_expenses = (
+        transactions_df.groupby(['year_month', 'category'])['amount']
         .sum()
-        .unstack(fill_value=0)  
+        .reset_index()
+        .pivot(index='year_month', columns='category', values='amount')
+        .fillna(0) 
     )
-    st.bar_chart(grouped_expenses, color=get_adjusted_palette(grouped_expenses.columns))
+
+    monthly_expenses = monthly_expenses.sort_index()
+
+    all_categories = list(monthly_expenses.columns)
+    selected_categories = st.multiselect(
+        "",
+        options=all_categories,
+        default=all_categories,
+    )
+
+    filtered_expenses = monthly_expenses[selected_categories] if selected_categories else monthly_expenses
+
+    st.line_chart(filtered_expenses, color=get_adjusted_palette(filtered_expenses.columns))
