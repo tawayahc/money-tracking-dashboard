@@ -23,6 +23,7 @@ def load_transactions_from_json(file_path="transactions.json"):
             return transactions
     except FileNotFoundError:
         return []
+from virtual_assistant.chatgpt_integration import ChatGPTClient
 
 def initialize_session_state():
     if "transactions" not in st.session_state:
@@ -36,3 +37,6 @@ def initialize_session_state():
         
     if "categories" not in st.session_state:
         st.session_state.categories = load_categories_from_json()
+
+    if "chatgpt_client" not in st.session_state:
+        st.session_state.chatgpt_client = ChatGPTClient()
