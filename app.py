@@ -26,5 +26,17 @@ def main():
     else:
         st.info("No transactions stored yet.")
 
+    # ChatGPT Section
+    st.subheader("ChatGPT")
+    user_input = st.text_area("Enter your message:")
+    if st.button("Send"):
+        st.write("You:", user_input)
+        # Use ChatGPTClient to send the prompt
+        response = st.session_state.chatgpt_client.create_chat(user_input)
+        st.write("### ChatGPT Response")
+        st.success(response)
+    else:
+        st.warning("Please enter a valid prompt.")
+
 if __name__ == "__main__":
     main()
