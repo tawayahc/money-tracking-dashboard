@@ -5,8 +5,13 @@ from dashboard.line_chart import plot_line_chart
 from dashboard.pie_chart import plot_pie_chart
 from sidebar.sidebar import render_sidebar
 from utils.session_state import initialize_session_state
+from virtual_assistant.chatgpt_integration import ChatGPTClient
+from virtual_assistant.chatgpt_ui import render_chatgpt_ui
 
 initialize_session_state()
+
+if "chatgpt_client" not in st.session_state:
+    st.session_state.chatgpt_client = ChatGPTClient()
 
 def main():
     
@@ -35,17 +40,9 @@ def main():
         with col2:
             plot_line_chart(st.session_state.transactions)
 
-    # ChatGPT Section
-    st.subheader("ChatGPT")
-    user_input = st.text_area("Enter your message:")
-    if st.button("Send"):
-        st.write("You:", user_input)
-        # Use ChatGPTClient to send the prompt
-        response = st.session_state.chatgpt_client.create_chat(user_input)
-        st.write("### ChatGPT Response")
-        st.success(response)
-    else:
-        st.warning("Please enter a valid prompt.")
+    st.divider()
+    
+    render_chatgpt_ui()
 
 if __name__ == "__main__":
     main()

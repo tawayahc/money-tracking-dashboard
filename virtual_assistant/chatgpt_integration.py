@@ -7,7 +7,19 @@ class ChatGPTClient:
         :param api_key: The OpenAI API key.
         :param model: The ChatGPT model to use.
         """
+        
+        self.api_key = api_key
         self.model = model
+        if self.api_key:
+            openai.api_key = self.api_key
+    
+    def set_api_key(self, api_key):
+        """
+        Set the API key for the ChatGPT client.
+
+        :param api_key: The OpenAI API key.
+        """
+        self.api_key = api_key
         openai.api_key = self.api_key
 
     def create_chat(self, prompt, system_message="You are a helpful assistant."):
@@ -18,6 +30,10 @@ class ChatGPTClient:
         :param system_message: The system message for ChatGPT's role.
         :return: The response from ChatGPT.
         """
+        
+        if not self.api_key:
+            return "API key not set. Please enter your OpenAI API key."
+        
         try:
             response = openai.ChatCompletion.create(
                 model=self.model,
