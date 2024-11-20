@@ -1,3 +1,4 @@
+import datetime
 import streamlit as st
 import json
 from PIL import Image
@@ -15,6 +16,29 @@ def save_transactions_to_json(file_path="transactions.json"):
     with open(file_path, "w", encoding="utf-8") as file:
         json.dump(transactions_serializable, file, ensure_ascii=False, indent=4)
 
+def convert_to_standard_date(date_str):
+    """
+    Convert a date string to the standard format YYYY-MM-DD.
+    If the date string is invalid, return today's date in the standard format.
+    """
+    try:
+        possible_formats = [
+            "%d %b %y",  
+            "%d %B %y", 
+            "%d-%m-%y",
+            "%d/%m/%y", 
+        ]
+
+        for date_format in possible_formats:
+            try:
+                parsed_date = datetime.strptime(date_str, date_format)
+                return parsed_date.strftime("%Y-%m-%d") 
+            except ValueError:
+                continue
+
+        raise ValueError("Date format not recognized.")
+    except Exception:
+        return datetime.now().strftime("%Y-%m-%d")
 
 def render_sidebar():
     st.sidebar.title("📝 ADD TRANSACTION HISTORY")
@@ -49,9 +73,11 @@ def render_sidebar():
                 )
             except Exception as e:
                 st.warning(f"Error: {str(e)}")
+                
+            extracted_date = convert_to_standard_date(extracted_info["Date"])
 
             transaction = {
-                "date": extracted_info["Date"],
+                "date": extracted_date,
                 "amount": get_info.correct_amount_fee(extracted_info["Amount"]) + get_info.correct_amount_fee(extracted_info["Fee"]),
                 "category": most_similar_word
             }
