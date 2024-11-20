@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 import streamlit as st
 import json
 from PIL import Image
@@ -62,23 +62,22 @@ def render_sidebar():
         for text in extracted_text_list:
             text = " ".join(text)
             extracted_info = get_info.extract_info(text)
-            st.toast(f"Extracted info: {extracted_info["Amount"]} Baht {extracted_info["Fee"]} Baht, {extracted_info['Date']}, {extracted_info['Memo']}")
+
             most_similar_word = ""
             similarity = 0.0
-            # Extracted info: 100.0 Baht 0.0 Baht, 29 24, ค่าส่งของ k+ sep
-
             try:
                 most_similar_word, similarity = st.session_state.fasttext_similarity.find_most_similar(
-                    extracted_info["Memo"], st.session_state.categories
+                    extracted_info.get("Memo", ""), st.session_state.categories
                 )
             except Exception as e:
-                st.warning(f"Error: {str(e)}")
-                
-            extracted_date = convert_to_standard_date(extracted_info["Date"])
+                st.toast(f"Error: {str(e)}")
+
+            amount = get_info.correct_amount_fee(extracted_info.get("Amount", "0"))
+            fee = get_info.correct_amount_fee(extracted_info.get("Fee", "0"))
 
             transaction = {
-                "date": extracted_date,
-                "amount": get_info.correct_amount_fee(extracted_info["Amount"]) + get_info.correct_amount_fee(extracted_info["Fee"]),
+                "date": convert_to_standard_date(extracted_info.get("Date", "")),
+                "amount": amount + fee,
                 "category": most_similar_word
             }
             st.session_state.transactions.append(transaction)
@@ -91,13 +90,13 @@ def render_sidebar():
         selected_amount = st.number_input(
             "Amount (฿: Baht)",
             min_value=0.0,
-            step=1.0,
+            step=0.01,
             format="%.2f"
         )
         
         selected_category = st.selectbox(
             "Category",
-            options=st.session_state.categories,
+            st.session_state.categories
         )
         
         submit_button = st.form_submit_button(label="Add Transaction")
@@ -109,5 +108,4 @@ def render_sidebar():
                 "category": selected_category
             }
             st.session_state.transactions.append(transaction)
-            save_transactions_to_json()
-            st.toast("Successfully added transaction!", icon="✅")
+            st.toast("Transaction added successfully!", icon="✅")
