@@ -1,83 +1,8 @@
 [
     {
-        "date": "2023-12-15",
-        "amount": 300.0,
-        "category": "Groceries"
-    },
-    {
-        "date": "2023-12-20",
-        "amount": 200.0,
-        "category": "Entertainment"
-    },
-    {
-        "date": "2024-01-10",
-        "amount": 150.0,
-        "category": "Travel"
-    },
-    {
-        "date": "2024-02-05",
-        "amount": 100.0,
-        "category": "Healthcare"
-    },
-    {
-        "date": "2024-03-15",
-        "amount": 250.0,
-        "category": "Shopping"
-    },
-    {
-        "date": "2024-04-18",
-        "amount": 180.0,
-        "category": "Bills"
-    },
-    {
-        "date": "2024-05-22",
-        "amount": 500.0,
-        "category": "Groceries"
-    },
-    {
-        "date": "2024-06-08",
-        "amount": 90.0,
-        "category": "Savings"
-    },
-    {
         "date": "2024-07-14",
         "amount": 60.0,
         "category": "เดินทาง"
-    },
-    {
-        "date": "2024-08-21",
-        "amount": 50.0,
-        "category": "Miscellaneous"
-    },
-    {
-        "date": "2024-09-10",
-        "amount": 120.0,
-        "category": "Healthcare"
-    },
-    {
-        "date": "2024-10-18",
-        "amount": 320.0,
-        "category": "Shopping"
-    },
-    {
-        "date": "2024-11-12",
-        "amount": 400.0,
-        "category": "Groceries"
-    },
-    {
-        "date": "2024-12-25",
-        "amount": 250.0,
-        "category": "Entertainment"
-    },
-    {
-        "date": "2025-01-05",
-        "amount": 150.0,
-        "category": "Travel"
-    },
-    {
-        "date": "2025-02-28",
-        "amount": 100.0,
-        "category": "Healthcare"
     },
     {
         "date": "2025-03-17",
@@ -85,63 +10,578 @@
         "category": "เดินทาง"
     },
     {
-        "date": "2025-04-22",
-        "amount": 180.0,
-        "category": "Bills"
-    },
-    {
-        "date": "2025-05-13",
-        "amount": 90.0,
-        "category": "Savings"
-    },
-    {
-        "date": "2025-06-11",
-        "amount": 75.0,
-        "category": "Miscellaneous"
-    },
-    {
-        "date": "2025-07-19",
-        "amount": 350.0,
-        "category": "Groceries"
-    },
-    {
-        "date": "2025-08-15",
-        "amount": 140.0,
-        "category": "Education"
-    },
-    {
-        "date": "2025-09-05",
-        "amount": 240.0,
-        "category": "Shopping"
-    },
-    {
-        "date": "2025-10-10",
-        "amount": 130.0,
-        "category": "Entertainment"
-    },
-    {
-        "date": "2025-11-07",
-        "amount": 170.0,
-        "category": "Travel"
-    },
-    {
-        "date": "2025-12-31",
-        "amount": 220.0,
-        "category": "Miscellaneous"
-    },
-    {
         "date": "2024-11-12",
         "amount": 50.0,
         "category": "อาหาร"
     },
     {
-        "date": "2024-11-12",
-        "amount": 10.0,
-        "category": "Bills"
+        "date": "2024-01-06",
+        "amount": 500.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-02-02",
+        "amount": 500.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-02-02",
+        "amount": 1000.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-02-02",
+        "amount": 1000.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2024-03-01",
+        "amount": 200.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-03-01",
+        "amount": 500.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-04-17",
+        "amount": 2000.0,
+        "category": "บิล"
+    },
+    {
+        "date": "2024-04-17",
+        "amount": 200.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-04-17",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-05-02",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-05-02",
+        "amount": 200.0,
+        "category": "อื่นๆ"
+    },
+    {
+        "date": "2024-05-02",
+        "amount": 2000.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2024-06-21",
+        "amount": 200.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2024-06-21",
+        "amount": 200.0,
+        "category": "บิล"
+    },
+    {
+        "date": "2024-06-26",
+        "amount": 424.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-07-23",
+        "amount": 201.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-07-18",
+        "amount": 2040.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-08-16",
+        "amount": 1000.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-08-16",
+        "amount": 500.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-01-05",
+        "amount": 150.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-02-11",
+        "amount": 300.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-03-14",
+        "amount": 450.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2024-04-22",
+        "amount": 120.0,
+        "category": "บิล"
+    },
+    {
+        "date": "2024-05-01",
+        "amount": 200.0,
+        "category": "อื่นๆ"
+    },
+    {
+        "date": "2023-06-09",
+        "amount": 80.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2023-07-19",
+        "amount": 500.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2023-08-28",
+        "amount": 75.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2023-09-07",
+        "amount": 600.0,
+        "category": "บิล"
+    },
+    {
+        "date": "2023-10-16",
+        "amount": 250.0,
+        "category": "อื่นๆ"
+    },
+    {
+        "date": "2022-11-11",
+        "amount": 130.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2022-12-25",
+        "amount": 320.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2025-01-08",
+        "amount": 700.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2025-02-14",
+        "amount": 60.0,
+        "category": "บิล"
+    },
+    {
+        "date": "2025-03-05",
+        "amount": 100.0,
+        "category": "อื่นๆ"
+    },
+    {
+        "date": "2025-04-12",
+        "amount": 90.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2025-05-24",
+        "amount": 400.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2025-06-19",
+        "amount": 240.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2025-07-30",
+        "amount": 360.0,
+        "category": "บิล"
+    },
+    {
+        "date": "2025-08-15",
+        "amount": 50.0,
+        "category": "อื่นๆ"
+    },
+    {
+        "date": "2024-11-01",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-01",
+        "amount": 40.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-01",
+        "amount": 50.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-01",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-02",
+        "amount": 2000.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2024-11-02",
+        "amount": 200.0,
+        "category": "อื่นๆ"
+    },
+    {
+        "date": "2024-11-03",
+        "amount": 200.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2024-11-04",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-04",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-05",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-05",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-06",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-06",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-07",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-07",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-08",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-08",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-09",
+        "amount": 1000.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2024-11-09",
+        "amount": 500.0,
+        "category": "บิล"
+    },
+    {
+        "date": "2024-11-11",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-11",
+        "amount": 100.0,
+        "category": "อาหาร"
     },
     {
         "date": "2024-11-12",
-        "amount": 10.0,
-        "category": "Bills"
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-12",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-13",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-13",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-14",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-14",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-15",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-15",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-16",
+        "amount": 1500.0,
+        "category": "ช็อปปิ้ง"
+    },
+    {
+        "date": "2024-11-17",
+        "amount": 1200.0,
+        "category": "บิล"
+    },
+    {
+        "date": "2024-11-18",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-18",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-19",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-19",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-20",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-20",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-22",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-22",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-23",
+        "amount": 100.0,
+        "category": "อื่นๆ"
+    },
+    {
+        "date": "2024-11-25",
+        "amount": 100.0,
+        "category": "อื่นๆ"
+    },
+    {
+        "date": "2024-11-25",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-25",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-26",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-26",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-27",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-27",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-28",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-11-28",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-30",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-11-30",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-02",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-02",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-03",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-03",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-04",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-04",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-04",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-05",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-05",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-06",
+        "amount": 100.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-06",
+        "amount": 100.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-07",
+        "amount": 200.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-09",
+        "amount": 500.0,
+        "category": "บิล"
+    },
+    {
+        "date": "2024-12-09",
+        "amount": 500.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-09",
+        "amount": 500.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-10",
+        "amount": 500.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-10",
+        "amount": 500.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-11",
+        "amount": 500.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-11",
+        "amount": 500.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-12",
+        "amount": 500.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-12",
+        "amount": 500.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-13",
+        "amount": 500.0,
+        "category": "อาหาร"
+    },
+    {
+        "date": "2024-12-13",
+        "amount": 500.0,
+        "category": "เดินทาง"
+    },
+    {
+        "date": "2024-12-12",
+        "amount": 1500.0,
+        "category": "ช็อปปิ้ง"
     }
 ]

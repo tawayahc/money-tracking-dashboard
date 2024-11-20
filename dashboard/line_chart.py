@@ -2,12 +2,11 @@ import streamlit as st
 import pandas as pd
 
 BASE_COLOR_PALETTE = [
-    "#FF5733", "#33FF57", "#3357FF", "#FF33A1", "#A133FF",
-    "#33FFF5", "#F5FF33", "#FF8333", "#8333FF", "#33FF83",
-    "#5733FF", "#FF3357", "#33A1FF", "#A1FF33", "#FF5733",
-    "#33FFA1", "#FF5733", "#57FF33", "#3357FF", "#FFA133",
-    "#FF3383", "#83FF33", "#5733FF", "#A1FF33", "#FF3333",
-    "#FF5733", "#3383FF", "#8333FF", "#FF83FF", "#33FFA1"
+    "#AB3428",
+    "#E28443",
+    "#F49E4C",
+    "#98BEA2",
+    "#2d728f"
 ]
 
 def get_adjusted_palette(categories):
