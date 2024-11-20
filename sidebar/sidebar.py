@@ -16,7 +16,7 @@ def save_transactions_to_json(file_path="transactions.json"):
         json.dump(transactions_serializable, file, ensure_ascii=False, indent=4)
 
 
-def render_sidebar(categories_list):
+def render_sidebar():
     st.sidebar.title("📝 ADD TRANSACTION HISTORY")
     st.sidebar.markdown("<hr/>", unsafe_allow_html=True)
     
@@ -38,10 +38,22 @@ def render_sidebar(categories_list):
         for text in extracted_text_list:
             text = " ".join(text)
             extracted_info = get_info.extract_info(text)
+            st.toast(f"Extracted info: {extracted_info["Amount"]} Baht {extracted_info["Fee"]} Baht, {extracted_info['Date']}, {extracted_info['Memo']}")
+            most_similar_word = ""
+            similarity = 0.0
+            # Extracted info: 100.0 Baht 0.0 Baht, 29 24, ค่าส่งของ k+ sep
+
+            try:
+                most_similar_word, similarity = st.session_state.fasttext_similarity.find_most_similar(
+                    extracted_info["Memo"], st.session_state.categories
+                )
+            except Exception as e:
+                st.warning(f"Error: {str(e)}")
+
             transaction = {
                 "date": extracted_info["Date"],
-                "amount": extracted_info["Amount"] + extracted_info["Fee"],
-                "category": extracted_info["Memo"]
+                "amount": get_info.correct_amount_fee(extracted_info["Amount"]) + get_info.correct_amount_fee(extracted_info["Fee"]),
+                "category": most_similar_word
             }
             st.session_state.transactions.append(transaction)
         st.toast("Successfully added transaction!", icon="✅")

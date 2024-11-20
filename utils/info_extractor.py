@@ -23,10 +23,16 @@ class InfoExtractor:
     def correct_amount_fee(self, value):
         """
         Correct common OCR errors in numeric values.
-        
-        :param text:
-        :return:
+
+        :param value: The value to correct.
+        :return: The corrected value as a float, or None if the value is invalid.
         """
+        if value is None:
+            return 0.0
+        
+        if isinstance(value, float):
+            return value
+
         corrected_value = value.replace('o', '0')
         corrected_value = corrected_value.replace('l', '1')
         corrected_value = corrected_value.replace(',', '')

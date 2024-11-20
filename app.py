@@ -18,7 +18,7 @@ def main():
     if "categories" not in st.session_state:
         st.session_state.categories = ["อาหาร", "เดินทาง", "อื่นๆ"]
     
-    render_sidebar(st.session_state.categories)
+    render_sidebar()
 
     st.title("Dashboard")
     

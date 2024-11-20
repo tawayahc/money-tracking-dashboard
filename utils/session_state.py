@@ -3,6 +3,7 @@ import streamlit as st
 from .ocr_extractor import OCRExtractor
 from .info_extractor import InfoExtractor
 from datetime import datetime
+from models.model_loader import FastTextSimilarity
 
 def load_categories_from_json(file_path="categories.json"):
     """Load categories from a JSON file."""
@@ -40,3 +41,6 @@ def initialize_session_state():
 
     if "chatgpt_client" not in st.session_state:
         st.session_state.chatgpt_client = ChatGPTClient()
+
+    if "fasttext_similarity" not in st.session_state:
+        st.session_state.fasttext_similarity = FastTextSimilarity()
